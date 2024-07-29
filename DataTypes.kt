@@ -11,6 +11,8 @@ fun main(){
        var maxfloat = Float.MAX_VALUE
        var mindouble = Double.MIN_VALUE//64 bits (8 bytes)
        var maxdouble = Double.MAX_VALUE
+       var minchar = Char.MIN_VALUE
+       var maxchar = Char.MAX_VALUE
        println("minshort :$minshort")
        println("maxshort :$maxshort")
        println("minbyte :$minbyte")
@@ -23,5 +25,6 @@ fun main(){
        println("maxfloat :$maxfloat")
        println("mindouble :$mindouble")
        println("maxdouble :$maxdouble")
-
+       println("minchar: $minchar") // \u0000 (Hangul Filler)
+       println("maxchar: $maxchar") // ? (65535) 2 bytes (16 bits)
 }
